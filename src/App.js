@@ -13,7 +13,7 @@ function App() {
   return (
    <section>
       <div className="App">
-        <header className="App-header">
+        <header className="App-header, hero">
           <Header  />
         </header>
 

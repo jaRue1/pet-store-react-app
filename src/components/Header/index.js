@@ -4,7 +4,8 @@ import React from 'react'
 function Header({isLoggedIn, setIsLoggedIn}){
 return (
 <>
-<img src=''/>
+<img src="./source.gif" alt="running puppy"/>
+
 <p>Welcome</p>
 </>
 )

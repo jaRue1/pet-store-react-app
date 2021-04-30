@@ -13,14 +13,22 @@
   }
 }
 .App-header {
-  background-color: #282c34;
-  min-height: 40vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  line-height: 1.6;
+  padding-top: 2rem;
+}
+
+
+.hero {
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./components/Header/image/hero.jpeg");
+  background-position-y: center;
+  margin-bottom: 40px;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 700px);
 }
 
 .main-section {
@@ -37,31 +45,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-.allCoffees {
-  background-color: orchid;
-}
-
-.allCoffees > li {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.allCoffees > li > div {
-  display: flex;
-  flex-direction: column;
-}
-
-nav > a {
-  color: white;
-  padding: 8px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-nav > a:hover, nav > a.active {
-  text-decoration: underline;
-  color: yellow;
 }

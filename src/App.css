@@ -1,5 +1,18 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
 .App {
-  text-align: center;
+  text-align: left;
+  background-color: rgba(206, 204, 231, 0.568);
+  box-sizing: border-box; 
+  font-family: 'Montserrat', sans-serif;
 }
 
 .App-logo {
@@ -12,33 +25,46 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
 .App-header {
+  background-color: rgb(47, 43, 107);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   line-height: 1.6;
-  padding-top: 2rem;
+  
 }
 
+h1 {
+  font-weight: 100;
+  font-size: 100px;
+  line-height: 1.6;
+ 
+}
 
 .hero {
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("./components/Header/image/hero.jpeg");
-  background-position-y: center;
+  background-image: url("./components/Header/image/hero puppy.jpeg");
+  background-position-y:top;
   margin-bottom: 40px;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 700px);
+  clip-path: polygon(0 0, 100% 0, 100% 66%, 0% 100%);
 }
 
 .main-section {
-  background-color: #c0c6c9;
-  min-height: 40vh;
+  
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 2em;
+  border-style: groove;
+
+  border-radius: 25px;
+  background: rgba(206, 204, 231, 0.568);
+  padding: 20px;
+ 
 }
 
 

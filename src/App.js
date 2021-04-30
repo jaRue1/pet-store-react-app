@@ -24,7 +24,6 @@ function App() {
             <section className="main-section">
              <Main/>
             </section>
-
             <section>
                 <Footer />
             </section>

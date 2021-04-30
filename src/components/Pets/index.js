@@ -23,7 +23,7 @@ class Pets extends React.Component {
 				{this.state.pets.map((pet, index) => {
 					// loop though all pets
 					return (
-						<section key={index}>
+						<section>
 							<div id="petslist">
 								<span>Pet Name: {pet.name}</span>
 								<br></br>

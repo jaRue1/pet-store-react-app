@@ -1,6 +1,6 @@
 import React from 'react'
 function Main() {
-	return <p>Main.</p>
+	return <p>React Pet SuperStore !</p>
 }
 export default Main
 

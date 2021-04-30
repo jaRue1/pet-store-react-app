@@ -17,22 +17,27 @@
   flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}  
-
-
 .App-header {
   background-color: rgb(47, 43, 107);
-  line-height: 1.6;
-  
 }
-.allpets > div > span{
+  .allpets > div > span{
+    display: flex;
+  }
+
+  .stafflist > div > span{
+    display: flex;
+  }
+    later {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.stafflist > div > span{
+
+.App-header>img {
   display: flex;
+  text-align: left;
+
+
 }
 h1 {
   font-weight: 100;
@@ -42,13 +47,16 @@ h1 {
 }
 
 .hero {
-  height: 300px;
+  height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("./components/Header/image/hero puppy.jpeg");
   background-position-y:top;
   margin-bottom: 40px;
   clip-path: polygon(0 0, 100% 0, 100% 66%, 0% 100%);
+
+  border-style: groove;
+  border-radius: 15px;
 }
 
 .main-section {
@@ -59,12 +67,12 @@ h1 {
   align-items: center;
   justify-content: center;
   font-size: 2em;
-  border-style: groove;
 
+  border-style: groove;
   border-radius: 25px;
   background: rgba(206, 204, 231, 0.568);
   padding: 20px;
- 
+  clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .App-link {

@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
-import logo from './logo.svg'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css'
+import React, { useState } from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Main from './components/Main'
+import Footer from './components/Footer'
 import Staff from './components/Staff'
 import Pets from './components/Pets'
 
@@ -9,11 +11,19 @@ function App() {
 	return (
 		<Router>
 			<div className="App">
-				<header className="App-header"></header>
-        <Switch>
-            <Route path="/staffs/" component={Staff} />
-            <Route path="/pets" component={Pets} />
-          </Switch>
+				<header className="App-header">
+					<Header />
+				</header>
+				<Switch>
+					<Route path="/staffs/" component={Staff} />
+					<Route path="/pets" component={Pets} />
+				</Switch>
+				<section className="main-section">
+					<Main />
+				</section>
+				<section>
+					<Footer />
+				</section>
 			</div>
 		</Router>
 	)

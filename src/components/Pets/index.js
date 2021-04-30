@@ -23,7 +23,7 @@ class Pets extends React.Component {
 						return (
 							<li key={pet.id}>
 								<div>
-									<h3>{pet.name}</h3>
+									<span>{pet.name}</span>
                                     {/* Add pet jsx here */}
 								</div>
                                 {/* and here */}

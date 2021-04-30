@@ -6,13 +6,11 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import Staff from './components/Staff'
 import Pets from './components/Pets'
-
 function App() {
-
 	return (
 		<Router>
 			<div className="App">
-				<header className="App-header">
+				<header className="App-header hero">
 					<Header />
 				</header>
 				<Switch>
@@ -29,5 +27,4 @@ function App() {
 		</Router>
 	)
 }
-
 export default App

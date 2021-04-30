@@ -28,7 +28,12 @@
   line-height: 1.6;
   
 }
-
+.allpets > div > span{
+  display: flex;
+}
+.stafflist > div > span{
+  display: flex;
+}
 h1 {
   font-weight: 100;
   font-size: 100px;

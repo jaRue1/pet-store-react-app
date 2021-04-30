@@ -23,25 +23,20 @@ class Staff extends React.Component {
         {this.state.staffs.map((staff, index) => {
           // loop though all staff
           return (
-            <section key={index}>
-              <div id="stafflist">
-
+            <section className="stafflist" key={index}>
+              <div >
                 <span>Staff Name: {staff.fullname}</span>
-                <br></br>
                 <span>Hourly Rate: {staff.hourlyrate}</span>
-                <br></br>
                 <span>Position: {staff.position}</span>
-                <br></br>
                 <span>
                   Assigned Pets:
                   {staff.Pets ? staff.Pets.map((pet) => {
 										return <span> {pet}, </span>
 									}): 'No Pets Assigned'}
                    </span>
-                <br></br>
                 <span>Fulltime: {staff.fulltime ? "Yes" : "No"}</span>
+                <br></br>
                 <p></p>
-                
               </div>
               {/* and here */}
             </section>

@@ -19,18 +19,27 @@ class Pets extends React.Component {
 
 		return (
 			<Fragment>
-                {this.state.pets.map((pet, index) => { // loop though all pets
-						return (
-							<li key={pet.id}>
-								<div>
-									<span>{pet.name}</span>
-                                    {/* Add pet jsx here */}
-								</div>
-                                {/* and here */}
+				<h2>All Pets</h2>
+				{this.state.pets.map((pet, index) => {
+					// loop though all pets
+					return (
+						<section key={index}>
+							<div id="petslist">
+								<span>Pet Name: {pet.name}</span>
+								<br></br>
+								<span>Hourly Rate: {pet.hourlyrate}</span>
+								<br></br>
+								<span>Position: {pet.position}</span>
+								<br></br>
 
-							</li>
-						)
-					})}
+								<br></br>
+
+								<span>Fulltime: {pet.fulltime ? 'Yes' : 'No'}</span>
+								<p></p>
+							</div>
+						</section>
+					)
+				})}
 			</Fragment>
 		)
 	}

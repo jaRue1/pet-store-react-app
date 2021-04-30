@@ -36,11 +36,11 @@ class Staff extends React.Component {
                   {staff.Pets ? staff.Pets.map((pet) => {
 										return <span> {pet}, </span>
 									}): 'No Pets Assigned'}
-                </span>
+                   </span>
                 <br></br>
-
                 <span>Fulltime: {staff.fulltime ? "Yes" : "No"}</span>
                 <p></p>
+                
               </div>
               {/* and here */}
             </section>

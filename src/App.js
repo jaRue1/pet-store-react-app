@@ -13,13 +13,15 @@ function App() {
 				<header className="App-header hero">
 					<Header />
 				</header>
+
+				<section className="main-section">
 				<Switch>
 					<Route path="/staffs/" component={Staff} />
 					<Route path="/pets" component={Pets} />
 				</Switch>
-				<section className="main-section">
 					<Main />
 				</section>
+				
 				<section>
 					<Footer />
 				</section>

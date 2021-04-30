@@ -13,22 +13,18 @@
   background-color: rgba(206, 204, 231, 0.568);
   box-sizing: border-box; 
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }  
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 
 .App-header {
   background-color: rgb(47, 43, 107);
-  display: flex;
   line-height: 1.6;
   
 }
@@ -87,3 +83,6 @@ li > div > span {
   font-size: 2em;
 }
 
+div > section > div > span {
+  font-weight: 600;
+}

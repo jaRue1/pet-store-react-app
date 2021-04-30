@@ -24,7 +24,7 @@ class Staff extends React.Component {
           // loop though all staff
           return (
             <section className="stafflist" key={index}>
-              <div className = "card" >
+              <div className = 'card' >
                 <strong><span>Staff Name: {staff.fullname}</span></strong>
                 <span>Hourly Rate: {staff.hourlyrate}</span>
                 <span>Position: {staff.position}</span>

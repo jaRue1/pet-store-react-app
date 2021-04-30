@@ -1,13 +1,14 @@
-import './App.css'
+import './App.css';
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Header from './components/Header'
-import Main from './components/Main'
-import Footer from './components/Footer'
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
 import Staff from './components/Staff'
 import Pets from './components/Pets'
 
 function App() {
+
 	return (
 		<Router>
 			<div className="App">

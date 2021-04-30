@@ -1,4 +1,3 @@
-
 import './App.css';
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
@@ -10,27 +9,25 @@ import Pets from './components/Pets'
 
 function App() {
 
-  return (
-    <Router>
-       <section>
-          <div className="App">
-            <header className="App-header">
-              <Switch>
-                <Route path="/staffs/" component={Staff} />
-                <Route path="/pets" component={Pets} />
-             </Switch>
-              <Header/>
-            </header>
-            <section className="main-section">
-             <Main/>
-            </section>
-            <section>
-                <Footer />
-            </section>
-          </div>
-          </section>
-    	</Router>
-  );
+	return (
+		<Router>
+			<div className="App">
+				<header className="App-header">
+					<Header />
+				</header>
+				<Switch>
+					<Route path="/staffs/" component={Staff} />
+					<Route path="/pets" component={Pets} />
+				</Switch>
+				<section className="main-section">
+					<Main />
+				</section>
+				<section>
+					<Footer />
+				</section>
+			</div>
+		</Router>
+	)
 }
 
 export default App

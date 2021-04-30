@@ -5,8 +5,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
+}  
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -39,19 +38,22 @@
   color: #61dafb;
 }
 
-.allCoffees {
-  background-color: orchid;
+
+nav > a {
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.allCoffees > li {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+nav > a:hover, nav > a.active {
+  text-decoration: underline;
+  color: yellow;
 }
 
-.allCoffees > li > div {
-  display: flex;
-  flex-direction: column;
+li > div > span {
+  font-weight: 300;
+  font-size: 2em;
 }
 
 nav > a {

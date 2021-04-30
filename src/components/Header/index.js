@@ -1,13 +1,16 @@
 import React from 'react'
-
-
-function Header({isLoggedIn, setIsLoggedIn}){
-return (
-<>
-<img src=''/>
-<p>Welcome</p>
-</>
-)
+import { NavLink } from 'react-router-dom'
+function Header() {
+	return (
+		<nav>
+			<NavLink exact to="/staffs">
+				Staff
+			</NavLink>
+			<NavLink exact to="/pets">
+				Pets
+			</NavLink>
+		</nav>
+	)
 }
-
 export default Header
+

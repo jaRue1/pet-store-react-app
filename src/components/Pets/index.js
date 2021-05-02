@@ -19,17 +19,17 @@ class Pets extends React.Component {
 
 		return (
 			<Fragment>
-				<h2>All Pets </h2>
+				<h2 id= "pets-title">All Pets </h2>
                 {this.state.pets.map((pet, index) => { // loop though all pets
 						return (
 							<section className ="allpets" key={index}>
               <div className = "petcard" >
 								<div >
-									<strong><span> Name: {pet.name} </span></strong>
-									<span> Type: {pet.type} </span>
-									<span> Age: {pet.age} </span>
-									<span>Breed: {pet.breed} </span>
-									<span>Food: {pet.food}</span>
+									<strong><span> Name: {pet.name} </span></strong><br/>
+									<span>Type: {pet.type} </span><br/>
+									<span>Age: {pet.age} </span><br/>
+									<span>Breed: {pet.breed} </span><br/>
+									<span>Food: {pet.food}</span><br/>
 									<br></br>
 									<p></p>
 								</div>

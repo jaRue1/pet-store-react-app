@@ -53,19 +53,15 @@ h1 {
 
 .main-section {
   
-  min-height: 100vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 2em;
-  border-style: groove;
-
-  border-radius: 25px;
   background: rgba(206, 204, 231, 0.568);
-  padding: 20px;
- 
-}
+  padding: 50px;
+  }
 
 .App-link {
   color: #61dafb;
@@ -92,10 +88,14 @@ div > section > div > span {
   font-weight: 600;
 }
 /* ============= Staff Cards Styling  =============== */
+#staff-title{
+  text-align: center;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 150%;
+  width: 50%;
   padding: 20px;
 }
 
@@ -104,14 +104,13 @@ div > section > div > span {
 }
 
 /* ==================Pets Cards Styling=========== */
-.petcard {
+#pets-title{
+  text-align: center;
+}
+.petcard{
+  display: flex;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 150%;
+  width: 320px;
   padding: 20px;
 }
-
-.petcard:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-

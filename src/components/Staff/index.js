@@ -19,19 +19,18 @@ class Staff extends React.Component {
 
     return (
       <Fragment>
-        <h2>All Staff</h2>
+        <h2 id= "staff-title">All Staff</h2>
         {this.state.staffs.map((staff, index) => {
           // loop though all staff
           return (
             <section className="stafflist" key={index}>
               <div className = 'card' >
+                <img src="./img/man.jpeg" alt="Man Image"/><br/>
                 <strong><span>Staff Name: {staff.fullname}</span></strong>
                 <span>Hourly Rate: {staff.hourlyrate}</span>
                 <span>Position: {staff.position}</span>
-                <span>
-                  Assigned Pets:
-                  {staff.Pets ? staff.Pets.map((pet) => {
-										return <span> {pet}, </span>
+                <span>Assigned Pets: {staff.Pets ? staff.Pets.map((pet) => {
+										return <span> {pet},</span>
 									}): 'No Pets Assigned'}
                    </span>
                 <span>Fulltime: {staff.fulltime ? "Yes" : "No"}</span>

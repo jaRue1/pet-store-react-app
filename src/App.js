@@ -15,13 +15,14 @@ function App() {
 				</header>
 
 				<section className="main-section">
-				<Switch>
-					<Route path="/staffs/" component={Staff} />
-					<Route path="/pets" component={Pets} />
-				</Switch>
 					<Main />
 				</section>
-				
+				<section className="content-section">
+					<Switch>
+						<Route path="/staffs/" component={Staff} />
+						<Route path="/pets" component={Pets} />
+					</Switch>
+				</section>
 				<section>
 					<Footer />
 				</section>

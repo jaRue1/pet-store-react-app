@@ -23,9 +23,9 @@ class Staff extends React.Component {
         {this.state.staffs.map((staff, index) => {
           // loop though all staff
           return (
-            <section className="stafflist" key={index}>
+            <section id= "testclass" className="stafflist" key={index}>
               <div className = 'card' >
-                <img src="./img/man.jpeg" alt="Man Image"/><br/>
+                <img src="/img/images.jpeg" alt="Man Image"/><br/>
                 <strong><span>Staff Name: {staff.fullname}</span></strong>
                 <span>Hourly Rate: {staff.hourlyrate}</span>
                 <span>Position: {staff.position}</span>
@@ -34,8 +34,6 @@ class Staff extends React.Component {
 									}): 'No Pets Assigned'}
                    </span>
                 <span>Fulltime: {staff.fulltime ? "Yes" : "No"}</span>
-                <br></br>
-                <p></p>
               </div>
             </section>
           )
